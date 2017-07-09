@@ -1,5 +1,7 @@
 package com.kp.core;
 
+import java.awt.Font;
+
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
@@ -14,18 +16,23 @@ public class TestSwing {
  
         //Add the ubiquitous "Hello World" label.
         JLabel label = new JLabel("Hello World");
+        label.setFont(new Font("Serif", Font.PLAIN, 28));
+        
+        label.setHorizontalAlignment(0);
         frame.getContentPane().add(label);
+        
+        
  
         //Display the window.
         frame.pack();
+        frame.setLocation(800, 500);
+        frame.setSize(400, 225);
         frame.setVisible(true);
-        
-        
-        
-        
-		
-		
-		
+
 	}
 
 }
+
+/*
+ * 
+ * */
