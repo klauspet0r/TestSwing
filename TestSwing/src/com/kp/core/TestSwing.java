@@ -16,17 +16,18 @@ public class TestSwing {
  
         //Add the ubiquitous "Hello World" label.
         JLabel label = new JLabel("Hello World");
-        label.setFont(new Font("Serif", Font.PLAIN, 28));
+        label.setFont(new Font("Serif", Font.PLAIN, 99));
         
         label.setHorizontalAlignment(0);
         frame.getContentPane().add(label);
         
+        label.getSize();
         
  
         //Display the window.
         frame.pack();
         frame.setLocation(800, 500);
-        frame.setSize(400, 225);
+        frame.setSize(label.getSize().width+80, label.getSize().height+80);
         frame.setVisible(true);
 
 	}
