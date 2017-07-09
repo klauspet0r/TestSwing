@@ -1,43 +1,24 @@
 package com.kp.core;
 
-import java.awt.Color;
-
-import javax.swing.BorderFactory;
 import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.border.Border;
+import javax.swing.JLabel;
+
 
 public class TestSwing {
 
 	public static void main(String[] args) {
 		
-		JPanel pane = new JPanel();
-		
-		JFrame frame = new JFrame("frame");
+		//Create and set up the window.
+        JFrame frame = new JFrame("HelloWorldSwing");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        
-      //Display the window.
-//        frame.pack();
-        
-        Border blackline;
-        
-        blackline = BorderFactory.createLineBorder(Color.black);
-        
-        frame.setSize(400, 225);
-        frame.setLocation(100, 100);
-        
-        Color bgColor = Color.CYAN;
-        Color fgColor = Color.BLUE;
-        
-        
-        frame.setForeground(fgColor);
+ 
+        //Add the ubiquitous "Hello World" label.
+        JLabel label = new JLabel("Hello World");
+        frame.getContentPane().add(label);
+ 
+        //Display the window.
+        frame.pack();
         frame.setVisible(true);
-        
-        pane.setSize(380, 200);
-        pane.setForeground(bgColor);
-        pane.setVisible(true);
-        
-        frame.setContentPane(pane);
         
         
         
