@@ -1,9 +1,12 @@
 package com.kp.core;
 
+import java.awt.Color;
 import java.awt.Font;
 
+import javax.swing.BorderFactory;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.border.Border;
 
 
 public class TestSwing {
@@ -21,14 +24,19 @@ public class TestSwing {
         label.setHorizontalAlignment(0);
         frame.getContentPane().add(label);
         
-        label.getSize();
         
- 
+        
+//        Border raisedbevel = BorderFactory.createRaisedBevelBorder();
+        Border raisedbevel = BorderFactory.createLineBorder(Color.black);
+        label.setBorder(raisedbevel);
+        
         //Display the window.
         frame.pack();
         frame.setLocation(800, 500);
-        frame.setSize(label.getSize().width+80, label.getSize().height+80);
+        frame.setSize(label.getSize().width+80, label.getSize().height);
         frame.setVisible(true);
+        frame.getContentPane().setBackground(Color.RED);
+        
 
 	}
 
