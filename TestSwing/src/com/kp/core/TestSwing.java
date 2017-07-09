@@ -19,13 +19,9 @@ public class TestSwing {
         label.setFont(new Font("Serif", Font.PLAIN, 99));
         
         label.setHorizontalAlignment(0);
-        frame.getContentPane().add(label);
-        
-        label.getSize();
-        
- 
-        //Display the window.
-        frame.pack();
+        frame.getContentPane().add(label);                
+         
+        //Display the window.        
         frame.setLocation(800, 500);
         frame.setSize(label.getSize().width+80, label.getSize().height+80);
         frame.setVisible(true);
